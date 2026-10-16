@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieTime - Movie Booking</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .offer {
+            color: orange;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .featured h2 {
+            text-transform: uppercase;
+        }
+
+        .booking-note {
+            color: lightblue;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Moving Announcement -->
+    <marquee class="announcement" direction="left" scrollamount="15">
+        Welcome to MovieTime! Book your favourite movies and enjoy the big screen experience!
+    </marquee>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h2 id="logo">MovieTime</h2>
+
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#movies">Movies</a>
+            <a href="#trailer">Trailer</a>
+            <a href="#booking">Book Tickets</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Featured Section -->
+    <div class="featured" id="home">
+
+        <div class="featured-text">
+            <p class="offer">YOUR MOVIE, YOUR EXPERIENCE</p>
+
+            <h2>Experience the Magic of Cinema</h2>
+
+            <p>
+                Discover the latest movies, explore different genres
+                and plan your next movie night with MovieTime.
+            </p>
+
+            <p class="booking-note">
+                Great stories deserve the big screen!
+            </p>
+
+            <a href="#movies" class="book-btn">Explore Movies</a>
+        </div>
+
+        <div class="featured-image">
+            <img src="https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_.jpg" alt="Dune Part Two movie poster">
+        </div>
+
+    </div>
+
+    <!-- Movie Gallery -->
+    <div class="movie-section" id="movies">
+
+        <h1>Now Showing</h1>
+        <p class="subtitle">Choose your next favourite movie</p>
+
+        <div class="movie-container">
+
+            <div class="movie-card">
+                <img id="img1" src="https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_.jpg" alt="Dune Part Two poster">
+
+                <h3>Dune: Part Two</h3>
+                <p>Sci-Fi | Action</p>
+                <p class="rating">★ 8.5/10</p>
+                <a href="#booking" class="book-btn">Book Tickets</a>
+            </div>
+
+            <div class="movie-card">
+                <img id="img2" src="https://image.tmdb.org/t/p/w500/ptpr0kGAckfQkJeJIt8st5dglvd.jpg" alt="Movie poster">
+
+                <h3>Movie Two</h3>
+                <p>Drama | Thriller</p>
+                <p class="rating">★ 8.3/10</p>
+                <a href="#booking" class="book-btn">Book Tickets</a>
+            </div>
+
+            <div class="movie-card">
+                <img id="img3" src="https://m.media-amazon.com/images/M/MV5BNWI0Y2NkOWEtMmM2OC00MjQ3LWI1YzItZGQxYzQ3NzI4NWZmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Avatar The Way of Water poster">
+
+                <h3>Avatar: The Way of Water</h3>
+                <p>Adventure | Fantasy</p>
+                <p class="rating">★ 7.6/10</p>
+                <a href="#booking" class="book-btn">Book Tickets</a>
+            </div>
+
+            <div class="movie-card">
+                <img id="img4" src="https://resizing.flixster.com/A0AhY7vcoHLlqwO6nfwnyOB6wZA=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2E1NWUwMWJhLWI5OTUtNDZkMy04NmE4LWU5Y2I5NTQ2NTE4OC5qcGc=" alt="Spider-Man movie poster">
+
+                <h3>Spider-Man</h3>
+                <p>Animation | Action</p>
+                <p class="rating">★ 8.6/10</p>
+                <a href="#booking" class="book-btn">Book Tickets</a>
+            </div>
+
+            <div class="movie-card">
+                <img id="img5" src="https://m.media-amazon.com/images/M/MV5BZGYzMGY0ZjctNDY3ZC00MDEzLTgzN2YtYWM1OTQyOTI1NDMxXkEyXkFqcGc@._V1_.jpg" alt="Interstellar poster">
+
+                <h3>Interstellar</h3>
+                <p>Sci-Fi | Drama</p>
+                <p class="rating">★ 8.7/10</p>
+                <a href="#booking" class="book-btn">Book Tickets</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Movie Genres: List -->
+    <div class="genre-section">
+        <h2>Explore Genres</h2>
+
+        <ul class="genre-list">
+            <li>Action</li>
+            <li>Comedy</li>
+            <li>Drama</li>
+            <li>Science Fiction</li>
+            <li>Animation</li>
+            <li>Thriller</li>
+        </ul>
+    </div>
+
+    <!-- Trailer: Video and Audio -->
+    <div class="media-section" id="trailer">
+
+        <h1>Movie Trailer</h1>
+        <p>Take a look at a movie trailer.</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Way9Dexny3w?si=nvR_oxLwru6XkhIJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <h3>Background Audio</h3>
+        <p>Play the sample audio below.</p>
+
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+    <!-- Showtimes Table -->
+    <div class="showtime-section">
+
+        <h1>Movie Showtimes</h1>
+
+        <table>
+            <tr>
+                <th>Movie</th>
+                <th>Showtime</th>
+                <th>Screen</th>
+                <th>Ticket Price</th>
+            </tr>
+
+            <tr>
+                <td>Dune: Part Two</td>
+                <td>10:00 AM</td>
+                <td>Screen 1</td>
+                <td>₹200</td>
+            </tr>
+
+            <tr>
+                <td>Movie Two</td>
+                <td>1:00 PM</td>
+                <td>Screen 2</td>
+                <td>₹180</td>
+            </tr>
+
+            <tr>
+                <td>Avatar</td>
+                <td>4:00 PM</td>
+                <td>Screen 3</td>
+                <td>₹220</td>
+            </tr>
+
+            <tr>
+                <td>Interstellar</td>
+                <td>7:00 PM</td>
+                <td>Screen 1</td>
+                <td>₹200</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- Booking Form -->
+    <div class="booking-section" id="booking">
+
+        <h1>Book Your Tickets</h1>
+        <p>Select your movie and preferred show details.</p>
+
+        <form action="#booking" method="get">
+
+            <label for="customer">Your Name:</label>
+            <input type="text" id="customer" name="customer" placeholder="Enter your name" required>
+
+            <label for="movie">Choose Movie:</label>
+            <select id="movie" name="movie" required>
+                <option value="">Select a movie</option>
+                <option value="dune">Dune: Part Two</option>
+                <option value="movie-two">Movie Two</option>
+                <option value="avatar">Avatar: The Way of Water</option>
+                <option value="spiderman">Spider-Man</option>
+                <option value="interstellar">Interstellar</option>
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="showtime">Choose Showtime:</label>
+            <select id="showtime" name="showtime" required>
+                <option value="">Select a show</option>
+                <option value="10am">10:00 AM</option>
+                <option value="1pm">1:00 PM</option>
+                <option value="4pm">4:00 PM</option>
+                <option value="7pm">7:00 PM</option>
+            </select>
+
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" id="tickets" name="tickets" min="1" max="10" value="1" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <button type="submit" class="submit-btn">Submit Booking</button>
+
+        </form>
+
+    </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer" id="contact">
+
+        <h2>MovieTime</h2>
+        <p>Your next movie experience starts here.</p>
+        <p>Email: movietime@example.com</p>
+        <p>&copy; 2026 MovieTime. All rights reserved.</p>
+
+    </div>
+
+</body>
+</html>
